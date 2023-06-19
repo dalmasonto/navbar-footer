@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #013224;
+    --background: #e1fef6;
+    --primary-button: #fb5181;
+    --secondary-button: #c3fded;
+    --accent: #fb5181;
+    --navbar-height: 60px;
+}
+
+body {
+    font-family: 'Geologica', sans-serif;
+    background-color: var(--background);
+}
+
+/* Navbar Styling */
+.navbar-holder {
+    height: var(--navbar-height);
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav {
+    height: 100%;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu-item {
+    height: 100%;
+}
+
+.menu-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    color: var(--accent);
+}
+
+.action-buttons {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.action-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+
+.action-button:nth-child(1) {
+    background-color: var(--text);
+    color: white;
+}
+
+.action-button:nth-child(2) {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Main Styling */
+.main {
+    height: 100vh;
+    width: min(90vw, 1200px);
+}
+
+/* Footer Styling */
+.footer {
+    margin: auto;
+    padding: 50px 0 0 0;
+    background-color: var(--secondary-button);
+}
+
+.row {
+    width: min(90vw, 1200px);
+    margin: auto;
+    display: flex;
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.col-4 {
+    flex: 1;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-title {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--text);
+}
+
+.content-text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.content-links {
+    padding: 0;
+    list-style-type: none;
+}
+
+.content-link{
+    margin-bottom: 10px;
+}
+
+.content-link a {
+    text-decoration: none;
+    height: 40px;
+    color: black;
+    font-size: 14px;
+}
+
+.content-link a i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.content-link a:hover {
+    color: var(--accent);
+}
+
+.subscribe-form input {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: 2px solid transparent;
+    border: none;
+}
+
+.subscribe-form input:focus {
+    outline-color: var(--accent);
+}
+
+
+.btn-subscribe {
+    display: block;
+    margin-top: 10px;
+    background-color: var(--text);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+/* Copyright Styling */
+.copyright{
+    padding: 20px 50px;
+    background: var(--text);
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
